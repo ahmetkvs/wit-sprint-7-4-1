@@ -48,7 +48,6 @@ export default function Login() {
             <FormGroup>
                 <Button disabled={true}>Sign in</Button>
             </FormGroup>
-
         </Form>
     );
 }
