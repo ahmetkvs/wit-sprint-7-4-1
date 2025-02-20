@@ -5,6 +5,7 @@ import {
     Label,
     Input,
     Button,
+    FormFeedback
 } from 'reactstrap';
 import { useHistory } from 'react-router-dom';
 import axios from "axios";
@@ -31,6 +32,23 @@ const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 export default function Login() {
 
     return (
-        <p>Helloooo</p>
+        <Form>
+            <FormGroup>
+                <Label>Email</Label>
+                <Input></Input>
+            </FormGroup>
+            <FormGroup>
+                <Label>Password</Label>
+                <Input></Input>
+            </FormGroup>
+            <FormGroup check>
+                <Label>I agree to terms of service and privacy policy</Label>
+                <Input type ="checkbox"></Input>
+            </FormGroup>
+            <FormGroup>
+                <Button disabled={true}>Sign in</Button>
+            </FormGroup>
+
+        </Form>
     );
 }
